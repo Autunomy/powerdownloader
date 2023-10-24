@@ -76,15 +76,9 @@ public class Downloader {
             }
 
 //------------------------------------------------------------------------------------------------------------------
-
-
-//
-//
 //        } catch (IOException e) {
 //            e.printStackTrace();
 //        }
-//
-//
 //        try(
 //                //这些都不需要关闭 会自动关闭
 //                InputStream inputStream = httpURLConnection.getInputStream();
@@ -100,6 +94,7 @@ public class Downloader {
 //            }
 //        } catch (FileNotFoundException e) {
 //            LogUtils.error("下载的文件不存在{}",url);
+//------------------------------------------------------------------------------------------------------------------
         } catch (Exception e){
             LogUtils.error("下载失败");
         } finally {
