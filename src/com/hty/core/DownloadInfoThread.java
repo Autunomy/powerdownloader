@@ -18,7 +18,7 @@ public class DownloadInfoThread implements Runnable{
     //文件总大小
     private long httpFileContentLength;
 
-    //已经下载完成的文件大小(这个数据是在程序执行之前就已经确定了，不会变)
+    //已经下载完成的文件大小(这个数据是在程序执行之前就已经确定了，不会变) 这个变量目前没有用，只有在断点续传的时候才有用
     public static LongAdder finishedSize = new LongAdder();
 
     //当前累计下载的大小
